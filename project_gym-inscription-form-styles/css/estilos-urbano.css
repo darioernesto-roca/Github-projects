@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto&display=swap');
+/*
+
+Color de fondo de respaldo background-image: #dde7f0 azul claro
+Fondo fildsets: rgb(255, 255, 255, 0.7) blanco con transparencia
+Fondo elementos legend: rgb(0, 0, 0, 0.9); negro con transparencia
+Fondo inputs focus: rgb(0, 0, 0, 0.9); negro con transparencia
+Color texto de elementos legend: #dde7f0 azul claro
+Color bordes H1: rgb(0, 0, 0, 0.9); negro con transparencia
+Color texto H1: rgb(0, 0, 0, 0.9); negro con transparencia
+Color fondo botones: #rgb(0, 0, 0, 0.9); negro con transparencia
+Color texto botones: #dde7f0 azul claro
+Color fondo botones hover: #a8c0b8
+Color texto botones hover: #2a3d37
+Color separador: rgb(0, 0, 0, 0.9); negro con transparencia
+
+
+*/
+
+
+body{
+    background-image: url(/img/urban-background.jpg);
+    background-color: #dde7f0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2023;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    min-width: 25rem;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    /* border-top: rgb(0, 0, 0, 0.9) solid .7rem; */
+    border-bottom: rgba(255, 255, 255, 0.9) solid .7rem;
+    border-left: rgb(81, 108, 99, 0) solid .7rem;
+    border-right: rgb(81, 108, 99, 0) solid .7rem;
+    color: rgba(255, 255, 255, 0.9);
+    border: solid 1.5em rgba(#000, .2);
+}
+
+fieldset {
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 1.3rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+legend{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-variant: small-caps;
+    background-color: rgb(0, 0, 0, 0.9);
+    color: #dde7f0;
+    text-align: left;
+    border-radius: 3px;
+}
+
+span {
+    vertical-align: super;
+}
+
+label,
+.label-sexo {
+    margin: 0.5rem auto;
+    width: 100px;
+    display: block;
+    align-items: left;
+    font-size: 0.9rem;
+}
+
+label,
+input,
+select,
+textarea {
+    width: 70%;
+}
+
+input,
+textarea,
+input::placeholder {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    color: #555555;
+}
+
+textarea {
+    height: 100px;
+    min-height: 100px;
+    max-height: 400px;
+    resize: vertical;
+}
+
+.texto-derecha{
+    text-align: right;
+}
+
+.inline{
+    display: inline-flex;
+}
+
+.separador{
+    border-bottom: rgb(0, 0, 0, 0.9) dotted 0.7rem;
+    margin: 2rem auto;
+    width: 50%;
+
+}
+
+.input-condiciones{
+    width: 500px;
+    color: #fff;
+}
+
+body > p,
+body > label,
+body > .obligatorio {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.9);
+    text-align: left;
+}
+
+body > p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+.btn{
+    gap: 3rem;
+    justify-content: center;
+    margin: 30px;
+    display: inline-block;
+    flex-direction: column-reverse;
+    margin: 3rem;
+    text-align: center;
+}
+
+.btn-submit,
+.btn-reset {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+    height: 0.5rem;
+    padding: 1.2rem 1rem;
+    margin: 1rem;
+    background-color: rgb(0, 0, 0, 0.9);
+    border: hsl(208, 39%, 20%) solid 2px;
+    color: hsl(208, 39%, 90%);
+    border-radius: 3px;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+    background-color: #dde7f0;
+    color: rgb(0, 0, 0, 0.9);
+}
+
+label > input {
+    width: fit-content;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 1.3rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+}
+
+#campo-obligatorio {
+    text-align: left;
+    color: #000;
+    font-weight: 600;
+    font-size: smaller;
+}
+.condiciones-pie {
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #000;
+    font-weight: 600;
+    font-size: smaller;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(0, 0, 0, .9);
+    color: #7c9993
+}
+
+#toggle-theme,
+#dices,
+#recordar {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    margin: 0.7rem 0.8rem 1rem;
+    color: #ffffff;
+    z-index: 1;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#toggle-theme::after,
+#toggle-theme::before,
+#dices::after,
+#dices::before,
+#recordar::after,
+#recordar::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+#toggle-theme::before,
+#dices::before,
+#recordar::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #0f0f0f;
+    border-radius: 10px;
+}
+
+#toggle-theme::after,
+#dices::after,
+#recordar::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+#toggle-theme:hover::before,
+#dices:hover::before,
+#recordar:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+#toggle-theme:hover::after,
+#dices:hover::after,
+#recordar:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+#toggle-theme:active::after,
+#dices:active::after,
+#recordar:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+img {
+    width: 50px;
+}
+
+.container-style-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#label-input-estilos > label {
+    margin: 1rem auto;
+    display: inline-flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    align-items: center;
+}

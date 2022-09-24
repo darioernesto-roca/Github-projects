@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css" id="active-stylesheet">
+    <title>Afiliación</title>
+</head>
+<body>
+    <div class="container-style-buttons">
+        <button id="toggle-theme" onclick="toggleTheme()">Cambiar estilo</button>
+        <button id="dices" onclick="randomTheme()"><img src="/img/dices.png" alt="dices"></button>
+        <button id="recordar" onclick="recordar()">Recordar</button>
+    </div>
+    <select id="estilos" name="estilos" onclick="selectStyle()">
+        <option value="">-Seleccionar estilo-</option>
+        <option value="por-defecto" id="por-defecto">Por defecto</option>
+        <option value="retro" id="retro">Retro</option>
+        <option value="urbano" id="urbano">Urbano</option>
+        <option value="sin-estilo" id="sin-estilo">Sin estilo</option>
+    </select>
+
+    <h1>Vení al Gym! 💪🏽</h1>
+
+    <form action="afiliacion.html" target="_blank">
+        <div>
+            <fieldset>
+                <legend>🙋🏼‍♂️Datos Personales👀</legend>
+                <div>
+                    <label for="nombre">Nombre:<span class="obligatorio">*</span></label>
+                    <input type="text" id="nombre" name="nombre" autofocus required minlength="2" maxlength="20">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:<span class="obligatorio">*</span></label>
+                    <input type="text" id="apellido" name="apellido" autofocus required minlength="2" maxlength="20">
+                </div>
+                <div>
+                    <label for="documento">Documento:<span class="obligatorio">*</span></label>
+                    <input type="text" id="documento" name="documento" autofocus required minlength="2" maxlength="20">
+                </div>
+                <div>
+                    <label for="nacionalidad">Nacionalidad<span class="obligatorio" required>*</span></label>
+                    <select name="nacionalidad">
+                        <option value="">-Seleccionar-</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasileña">Brasileña</option>
+                        <option value="Uruguaya">Uruguaya</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="contanos">Contanos un poco de vos...</label>
+                    <textarea id="contanos" name="contanos" minlength="10"></textarea>
+                </div>
+                <div class="label-sexo">Sexo<span class="obligatorio" required>*</span></div>
+                <div class="inline">
+                    <input type="radio" id="femenino" name="sexo" value="f" checked>
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="masculino" name="sexo" value="m">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="otro" name="sexo" value="-">
+                    <label for="otro">Otro</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="separador"></div>
+        <div>
+            <fieldset>
+                <legend>📱Datos de Contacto📧</legend>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Código de área y número" class="texto-derecha">
+                </div>
+                <div>
+                    <label for="direccion-de-correo">Dirección de correo electrónico</label>
+                    <input type="email" id="direccion-de-correo" name="direccion-de-correo" placeholder="Ej: mail@mail.com" class="texto-derecha">
+                </div>
+            </fieldset>
+        </div>
+        <div class="separador"></div>
+        <div>
+            <fieldset>
+                <legend>🚴🏼Actividades🤸🏼</legend>
+                <p>Por favor, indicá cuáles actividades te interesan.</p>
+                <p>Sede Palermo</p>
+                <div class="inline">
+                    <input type="checkbox" name="actividades-palermo" value="Básquet">
+                    <label for="actividades-palermo">Básquet</label>
+                    <input type="checkbox" name="actividades-palermo" value="Boxeo">
+                    <label for="actividades-palermo">Boxeo</label>
+                    <input type="checkbox" name="actividades-palermo" value="Fútbol">
+                    <label for="actividades-palermo">Fútbol</label>
+                    <input type="checkbox" name="actividades-palermo" value="Tenis">
+                    <label for="actividades-palermo">Tenis</label>
+                </div>
+                <p>Sede rosario</p>
+                <div class="inline">
+                    <input type="checkbox" name="actividades-rosario" value="Básquet">
+                    <label for="actividades-rosario">Básquet</label>
+                    <input type="checkbox" name="actividades-rosario" value="Fútbol">
+                    <label for="actividades-rosario">Fútbol</label>
+                    <input type="checkbox" name="actividades-rosario" value="Rugby">
+                    <label for="actividades-rosario">Rugby</label>
+                    <input type="checkbox" name="actividades-rosario" value="Voley">
+                    <label for="actividades-rosario">Voley</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="container">
+            <label for="acepto-condiciones" class="condiciones-pie"><input type="checkbox" name="aceptar-condiciones" class="label-nota-pie" required>Acepto las condiciones<span class="obligatorio">*</span></label>
+            <label for="recibir-novedades" class="condiciones-pie"><input type="checkbox" name="recibir-novedades" class="label-nota-pie">Deseo recibir novedades</label>
+            <p id="campo-obligatorio">*: campo obligatorio.</p>
+        </div>
+            <button type="submit" class="btn btn-submit" onclick=datescapture ()>Iniciar afiliación</button>
+            <input type="reset" value="Restablecer" class="btn btn-reset">
+    </form>
+        <script src="js/main.js"></script>
+
+</body>
+</html>
